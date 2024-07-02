@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HNG STAGE-ONE-TASK</title>
+    <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="relative">
+    <div class="absolute -z-10 w-full h-full flex justify-between gap-8 px-20">
+        <div class="border-r-2 border-slate-200 h-full border-dashed"></div>
+        <div class="border-r-2 border-slate-200 h-full border-dashed hidden md:block"></div>
+        <div class="border-r-2 border-slate-200 h-full border-dashed hidden md:block"></div>
+        <div class="border-r-2 border-slate-200 h-full border-dashed"></div>
+    </div>
+    <header class="flex flex-col items-center gap-6 py-8 text-slate-600">
+        <div class="flex items-center justify-center gap-2">
+            <div class="size-fit p-1 rounded-[8px] border border-slate-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-aperture">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m14.31 8 5.74 9.94" />
+                    <path d="M9.69 8h11.48" />
+                    <path d="m7.38 12 5.74-9.94" />
+                    <path d="M9.69 16 3.95 6.06" />
+                    <path d="M14.31 16H2.83" />
+                    <path d="m16.62 12-5.74 9.94" />
+                </svg>
+            </div>
+            <p class="text-xl font-base">About Me</p>
+        </div>
+        <p class="text-xl md:text-2xl text-center max-w-[450px] px-4">I am just an HNG Intern that is passionate about
+            creating a user-friendly webpages 😏</p>
+    </header>
+    <main>
+        <div class="flex flex-col-reverse md:flex-row justify-center items-center gap-6">
+            <div class="flex flex-col gap-4">
+                <div class="bg-slate-100 max-w-[290px] p-3 rounded-[8px] border border-slate-300 shadow">
+                    <div class="size-fit p-1 rounded-[8px] border border-slate-300 shadow-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-user-round">
+                            <circle cx="12" cy="8" r="5" />
+                            <path d="M20 21a8 8 0 0 0-16 0" />
+                        </svg>
+                    </div>
+                    <div class="flex gap-2">
+                        <p>• Slack Name:</p>
+                        <p class="font-medium" data-testid="slackDisplayName">kingsleyakwa</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <p>• Email:</p>
+                        <p class="font-medium" data-testid="slackEmail">kingsleyakwa@gmail.com</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <p>• Track:</p>
+                        <p class="font-medium">Front End</p>
+                    </div>
+                </div>
+                <div class="bg-slate-100 w-full md:max-w-[290px] p-3 rounded-[8px] border border-slate-300 shadow">
+                    <div class="size-fit p-1 rounded-[8px] border border-slate-300 shadow-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-clock-4">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="flex gap-2">
+                        <p>• Current Time:</p>
+                        <p id="currentTimeUTC" class="font-medium" data-testid="currentTimeUTC">12:30:45</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <p>• Current Day:</p>
+                        <p id="currentDay" class="font-medium" data-testid="currentDay">Tuesday</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 rounded-[8px] size-fit bg-white border border-slate-300 shadow">
+                <div class="bg-slate-100 size-fit rounded-[8px] overflow-hidden">
+                    <img src="./266x266.jpg" alt="diplay picture" data-testid="slackProfilePicture">
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center mt-10">
+            <div class=" bg-slate-100 size-fit p-4 md:rounded-[8px] border border-slate-300 shadow">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="size-fit p-1 rounded-[8px] border border-slate-300 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-goal">
+                            <path d="M12 13V2l8 4-8 4" />
+                            <path d="M20.561 10.222a9 9 0 1 1-12.55-5.29" />
+                            <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" />
+                        </svg>
+                    </div>
+                    <p class="text-lg md:text-2xl font-medium">My tech goals for the next two years</p>
+                </div>
+
+                <p>As a front end developer, I want to achieve the following goals in the next two years:</p>
+                <p class="italic">• Gain expertise in popular front-end frameworks to build dynamic and scalable web
+                    applications.</p>
+                <p class="italic">• Contribute to open-source React projects and participate in community discussions.
+                </p>
+                <p class="italic">• Ensure web applications are fast, efficient, and provide a seamless user experience.
+                </p>
+                <p class="italic">• Create inclusive web applications that are accessible to all users.
+                </p>
+
+            </div>
+        </div>
+    </main>
+    <footer class="bg-slate-100 py-4 px-10 flex justify-center gap-4 mt-10">
+        <a href="https://hng.tech/learn" class="underline" data-testid="hngLink">hng.tech/learn</a>
+        <a href="https://keyword.dog" class="underline" data-testid="keywordLink">keyword.dog</a>
+        <a href="https://scrapeanyweb.site" class="underline" data-testid="scrapeanywebLink">scrapeanyweb.site</a>
+    </footer>
+    <script>
+        const date = new Date()
+        const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        const currentTimeUTC = date.toUTCString().split(' ')[4]
+        const currentDayIndex = date.getDay()
+        const currentDay = daysOfTheWeek[currentDayIndex]
+
+        const currentDayText = document.querySelector("#currentDay")
+        const currentTimeUTCText = document.querySelector("#currentTimeUTC")
+        currentDayText.innerHTML = currentDay
+        currentTimeUTCText.innerHTML = currentTimeUTC
+    </script>
+</body>
+
+</html>
